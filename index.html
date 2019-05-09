@@ -1,0 +1,113 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="吉食来,快餐">
+    <meta name="description"
+          content="吉食来排骨米饭始于2004年在邯郸开出第一家店以来，迄今已在邯郸市区开出多家连锁店；今后，吉食来将保持迅猛发展的势头，使吉食来连锁店及其衍生品牌在邯郸市区以及全国市场遍地开花。">
+    <title>吉食来</title>
+
+    <link href="static/css/css.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .nav_01 {
+            width: 161px;
+            height: 758px;
+            position: absolute;
+            left: 50%;
+            top: 0px;
+            margin-left: -500px;
+            text-align: left;
+            z-index: 99;
+        }
+
+        .float_close_l {
+            top: 30%;
+            left: 55%;
+            position: fixed;
+            width: 710px;
+            z-index: 999999;
+            margin-left: -355px;
+            margin-top: 0px;
+        }
+
+        .float_close_l img {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container"><!--container-->
+    <div class="banner">
+        <div class="headerPage"></div>
+        <div class="banner_show" id="banner_show">
+            <div class="banner_pre_next">
+                <a href="javascript:;" class="banner_btn_left">上一个</a>
+                <a href="javascript:;" class="banner_btn_right">下一个</a>
+            </div>
+
+            <a href="javascript:;" target="_blank"
+               class="bannger_inbox"><img src="static/picture/w020181229632879958379.jpg" alt="御赐八宝礼盒-首页.jpg"
+                                          width="2000" height="758"/></a>
+
+            <a href="http://www.yos.com.cn/tptt/201812/t20181229_17076001.htm" target="_blank"
+               class="bannger_inbox"><img src="static/picture/w020181229637682165794.jpg" alt="肥牛" width="2000"
+                                          height="758"/></a>
+
+            <a href="http://www.yos.com.cn/tptt/201812/t20181229_17076000.htm" target="_blank"
+               class="bannger_inbox"><img src="static/picture/w020181229630375363932.jpg" alt="卷饼平、中、优、优优价-首页.jpg"
+                                          width="2000" height="758"/></a>
+
+            <a href="http://www.yos.com.cn/tptt/201812/t20181229_17075999.htm" target="_blank"
+               class="bannger_inbox"><img src="static/picture/w020181229630108470613.jpg" alt="吉祥果-首页.jpg" width="2000"
+                                          height="758"/></a>
+
+            <a href="http://www.yos.com.cn/tptt/201812/t20181229_17075998.htm" target="_blank"
+               class="bannger_inbox"><img src="static/picture/w020181229629800425317.jpg" alt="八宝扁粮-首页.jpg" width="2000"
+                                          height="758"/></a>
+
+
+            <div class="yq_banner_list" id="yq_banner_list">
+                <a href="javascript:;" rel="0" class="hover">&nbsp;</a>
+                <a href="javascript:;" rel="1">&nbsp;</a>
+                <a href="javascript:;" rel="2">&nbsp;</a>
+                <a href="javascript:;" rel="3">&nbsp;</a>
+                <a href="javascript:;" rel="4">&nbsp;</a>
+                <a href="javascript:;" rel="5">&nbsp;</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="footerPage"></div>
+</div><!--container-->
+
+<div class="Float_l" id="imgs">
+    <div class="Float_jyj" tabindex="-1"
+         style="opacity: 0.85; display: block;background-color:#1b0c00;position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 1000;"></div>
+    <span class="float_close_l">
+    
+    <img src="static/image/logo.jpg" width="640" height="351"/>
+    
+</span>
+</div>
+<script type="text/javascript" src="static/js/jquery.js"></script>
+<script type="text/javascript" src="static/js/jquery.caroufredsel-6.0.4-packed.js"></script>
+<script type="text/javascript" src="static/js/focus.js"></script>
+<script type="text/javascript">
+    var img = document.getElementById("imgs");
+    img.style.display = "inline";
+    setTimeout(function () {
+        img.style.display = "none";
+    }, 3000);
+    //加载左侧菜单
+    $(".headerPage").load("nav.html", function (result) {});
+    $(".footerPage").load("footer.html", function (result) {});
+</script>
+</body>
+</html>
